@@ -1,0 +1,28 @@
+<div class="container">
+  
+  <h1>Roles: </h1>
+  <hr>
+ 
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action" (click)="clickedAdmin()" >Admin</button>
+    <div class="list-group" *ngFor="let grole of EmpList"  >
+  <li class="list-group-item" *ngIf="grole.role==role1" >{{grole.name}}</li>
+  </div>
+
+  <button type="button" class="list-group-item list-group-item-action" (click)="clickedMember()">Member</button>
+  <div class="list-group" *ngFor="let grole of EmpList"  >
+      <li class="list-group-item" *ngIf="grole.role==role2" >{{grole.name}}</li>
+  </div>
+
+  <button type="button" class="list-group-item list-group-item-action" (click)="clickedSuperAdmin()">Super Admin</button>
+  <div class="list-group" *ngFor="let grole of EmpList"  >
+  <li class="list-group-item" *ngIf="grole.role==role3" >{{grole.name}}</li>
+</div>
+
+  <button type="button" class="list-group-item list-group-item-action" (click)="clickedSuperviser()">Superviser</button>
+  <div class="list-group" *ngFor="let grole of EmpList"  >
+        <li class="list-group-item" *ngIf="grole.role==role4" >{{grole.name}}</li> 
+</div>
+</div>
+
+</div>
